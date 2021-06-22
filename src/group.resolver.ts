@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { Transform } from 'class-transformer';
 import { Args, Mutation, Resolver, Query } from '@nestjs/graphql';
 import {
   IsNotEmptyString,

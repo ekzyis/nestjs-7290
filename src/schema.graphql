@@ -1,0 +1,17 @@
+type Group {
+  id: ID!
+  name: String!
+}
+
+input UpdateGroupInput {
+  name: String
+}
+
+type Query {
+  group: Group
+}
+
+type Mutation {
+  updateGroup(id: String!, group: UpdateGroupInput!): Group
+  mergeGroups(ids: [String!]!, name: String!): Group
+}
